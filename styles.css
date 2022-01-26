@@ -74,12 +74,12 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: #0f0f0f; */
-  background: rgb(255, 99, 71);
+  /* background: rgb(255, 99, 71);
   background: linear-gradient(
     0deg,
     rgba(255, 99, 71, 1) 21%,
     rgba(15, 15, 15, 0.9396708512506565) 77%
-  );
+  ); */
 }
 .hero .intro {
   /* color: rgb(255, 255, 255); */
