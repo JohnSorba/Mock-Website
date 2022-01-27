@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 *,
@@ -15,6 +15,9 @@ body {
   text-align: center;
   color: #0f0f0f;
   background-color: #f8f8f8;
+}
+p {
+  font-size: 1em;
 }
 
 /**HEADER Section**/
@@ -126,7 +129,7 @@ body {
   margin-bottom: 0.625rem;
 }
 .item p {
-  font-size: 1rem;
+  font-size: 1em;
   text-align: justify;
 }
 

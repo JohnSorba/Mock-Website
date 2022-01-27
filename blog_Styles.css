@@ -80,7 +80,7 @@ article p {
 .side-content a {
   color: #0f0f0f;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 .side-content hr {
   color: tomato;
@@ -101,8 +101,7 @@ article p {
   /* box-shadow: 0.5px 0px 6px rgba(255, 99, 71, 0.2); */
   /* -0.5px -0.5px 6px 0.25px rgba(0, 0, 0, 0.2); */
 }
-.profile img {
-  display: block;
+.profile .img-container {
   height: 150px;
   width: 150px;
   /* border: 1px solid tomato; */
@@ -110,8 +109,13 @@ article p {
   border-radius: 50%;
   margin: -70px auto 1rem;
 }
+.profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 .profile p {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
