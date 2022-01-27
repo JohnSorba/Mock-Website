@@ -223,15 +223,31 @@ article p {
   .blog-info > * {
     margin-bottom: 0.5rem;
   }
+  #main-content {
+    padding: 1rem 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .wrapper {
-    width: 100%;
+    width: 90%;
+  }
+  #main-content {
+    padding: 1rem 0;
   }
   .blog-info {
     flex-direction: column;
   }
   .blog-info > * {
     margin-bottom: 0.5rem;
+  }
+
+  #cta p {
+    font-size: 1rem;
+  }
+  .footnote q {
+    font-size: 1rem;
+  }
+  .footnote p {
+    font-size: 0.8rem;
   }
 }
