@@ -51,6 +51,7 @@ p {
 
 .nav-links {
   display: flex;
+  flex-flow: wrap;
 }
 
 .nav-links li {
@@ -115,6 +116,7 @@ p {
   /* border: 1px solid red; */
   padding-bottom: 1rem;
   text-align: left;
+  margin-bottom: 2rem;
 }
 .item img {
   width: 100%;
@@ -210,8 +212,8 @@ p {
 
 #cta button {
   padding: 0.5rem 1rem;
-  width: 10%;
-  font-size: 1.2rem;
+  width: auto;
+  font-size: 1.2em;
   font-weight: bold;
   font-family: cursive;
   color: white;
@@ -265,5 +267,51 @@ footer a {
   font-weight: bold;
 }
 
-@media screen and (max-width: 960px) {
+/**Mobile**/
+@media screen and (max-width: 600px) {
+  #main-header {
+    font-size: 80%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0;
+  }
+  .nav-links li {
+    margin: 0.25rem 0;
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+  .hero .intro {
+    font-size: 80%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  #cta h2 {
+    font-size: 1.3rem;
+  }
+  #cta p {
+    font-size: 1rem;
+  }
+  #cta .footnote q {
+    font-size: 1rem;
+  }
+  #cta .footnote p {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tc {
+    margin-bottom: 0.25rem;
+  }
 }
