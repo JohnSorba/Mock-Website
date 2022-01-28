@@ -16,6 +16,8 @@ li a:hover {
   border-bottom: 1px solid #0f0f0f48;
   transition: ease-in 0.2s;
 }
+
+/**Essay Writing**/
 #main-content {
   /* outline: 1px solid black; */
   padding: 1.5rem 2.5rem 0;
@@ -26,12 +28,14 @@ li a:hover {
   font-size: 0.8rem;
   margin: 0.5rem 0 2rem;
 }
+/**Blog details**/
 .blog-info > * {
   margin-right: 1.3rem;
 }
 .blog-info .icon {
   margin-right: 0.25rem;
 }
+/**Essay**/
 .essay {
   border-bottom: 3px solid rgba(255, 99, 71, 0.5);
 }
@@ -49,14 +53,14 @@ li a:hover {
   padding-left: 1.5rem;
   font-size: 2rem;
 }
-article p {
+.essay p {
   margin-bottom: 1.5rem;
   font-size: 1.1em;
   line-height: 1.6;
   text-align: justify;
 }
 
-/**ASIDE Section**/
+/**************************ASIDE Section**************************/
 .side-content {
   /* outline: 1px solid black; */
   text-align: left;
@@ -87,7 +91,6 @@ article p {
   margin: 1.5rem 0 2.5rem;
   opacity: 0.5;
 }
-
 /**PROFILE**/
 .side-content .profile {
   text-align: left;
@@ -174,7 +177,7 @@ article p {
     -0.5px -0.5px 6px 0.25px rgba(0, 0, 0, 0.2);
 } */
 
-/**MOST VISITED SITES**/
+/**************************MOST VISITED SITES*****************************/
 .most-visited-sites {
   margin-bottom: 2rem;
 }
@@ -184,7 +187,7 @@ article p {
   margin-left: 0.3rem;
 }
 
-/**EXTRA LINKS**/
+/**************************EXTRA LINKS****************************/
 .other-resources {
   /* outline: 1px solid black; */
   margin: 0 0 5rem;
@@ -210,7 +213,7 @@ article p {
   color: #0f0f0f;
 }
 
-/**RESPONSIVE SECTION**/
+/**********************************RESPONSIVE SECTION********************************/
 @media screen and (max-width: 768px) {
   .wrapper {
     grid-template-columns: 1fr;
@@ -226,19 +229,35 @@ article p {
   #main-content {
     padding: 1rem 0;
   }
+  #main-content h1 {
+    font-size: 4vw;
+  }
+  .essay p {
+    margin-bottom: 1.5rem;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 600px) {
   .wrapper {
-    width: 90%;
+    /* width: 90vw; */
   }
   #main-content {
     padding: 1rem 0;
+    max-width: 90vw;
   }
   .blog-info {
     flex-direction: column;
   }
   .blog-info > * {
     margin-bottom: 0.5rem;
+  }
+  .essay p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
   }
 
   #cta p {
