@@ -18,6 +18,9 @@ li a:hover {
 }
 
 /**Essay Writing**/
+.wrapper {
+  padding: 7% 0;
+}
 #main-content {
   /* outline: 1px solid black; */
   padding: 1.5rem 2.5rem 0;
