@@ -245,11 +245,12 @@ p {
 
 /**FOOTER Section**/
 footer {
-  padding: 2rem 0;
+  padding: 0 10%;
   text-align: right;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
   /* background-color: #0f0f0f; */
   color: white;
@@ -328,7 +329,7 @@ footer a {
     margin-bottom: 0.25rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 570px) {
   main {
     padding-left: 7% 2%;
   }

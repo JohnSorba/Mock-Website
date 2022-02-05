@@ -253,9 +253,9 @@ li a:hover {
     margin-top: 5rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 560px) {
   .wrapper {
-    margin-top: 2rem;
+    margin-top: 2rem 2%;
   }
   #main-content {
     padding: 1rem 0;
