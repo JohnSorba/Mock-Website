@@ -214,9 +214,10 @@ li a:hover {
 }
 
 /**********************************RESPONSIVE SECTION********************************/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .wrapper {
     display: block;
+    grid-template-columns: 1fr;
     margin: 2rem 2rem;
     font-size: 1em;
     padding: 0;
@@ -253,16 +254,22 @@ li a:hover {
     margin-top: 5rem;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (min-width: 360px) {
+  main {
+    margin: 0 0%;
+  }
   .wrapper {
-    margin-top: 2rem 2%;
+    display: block;
+    grid-template-columns: 1fr;
+    margin: 1rem 0%;
   }
   #main-content {
     padding: 1rem 0;
-    /* max-width: 90vw; */
+    max-width: 100%;
+    margin: 0;
   }
   #main-content h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .blog-info {
     flex-direction: column;
@@ -276,7 +283,8 @@ li a:hover {
   }
   .essay p {
     margin-bottom: 1.5rem;
-    /* font-size: 1em; */
+    font-size: 1em;
+    font-family: Georgia, "Times New Roman", Times, serif;
     line-height: 1.6;
     text-align: justify;
   }

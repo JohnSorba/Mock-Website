@@ -272,7 +272,7 @@ footer a {
 }
 
 /**Mobile**/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #main-header {
     font-size: 80%;
   }
@@ -329,8 +329,53 @@ footer a {
     margin-bottom: 0.25rem;
   }
 }
-@media screen and (max-width: 570px) {
+@media screen and (min-width: 600px) {
   main {
-    padding-left: 7% 2%;
+    padding-left: 7% 0%;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .navbar {
+    padding: 0 2%;
+  }
+  .navbar h1 {
+    display: none;
+  }
+  ul .nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin: 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    flex: 1 1 50%;
+  }
+  .nav-links a {
+    display: block;
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin: 0.25em;
+  }
+  .hero {
+    padding: 5% 5%;
+  }
+  .hero .intro {
+    font-size: 4vw;
+    text-align: justify;
+  }
+  .hero h1 {
+    font-size: 2em;
+    line-height: 1.1;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  main {
+    padding-left: 7% 0%;
   }
 }
