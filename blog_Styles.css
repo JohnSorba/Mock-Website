@@ -93,63 +93,6 @@ li a:hover {
   margin: 1.5rem 0 2.5rem;
   opacity: 0.5;
 }
-/**PROFILE**/
-.side-content .profile {
-  text-align: left;
-  margin-bottom: 2rem;
-  height: auto;
-  width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.005); */
-  padding: 0.5rem 0.625rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  /* box-shadow: 0.5px 0px 6px rgba(255, 99, 71, 0.2); */
-  /* -0.5px -0.5px 6px 0.25px rgba(0, 0, 0, 0.2); */
-}
-.profile .img-container {
-  height: 50%;
-  width: 50%;
-  /* border: 1px solid tomato; */
-  box-shadow: 0.5px 0px 6px rgba(255, 99, 71, 0.2);
-  border-radius: 50%;
-  margin: -70px auto 1rem;
-}
-.profile img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-.profile p {
-  font-size: 0.9em;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-}
-.profile-text p a {
-  color: rgba(255, 99, 71, 1);
-}
-.profile p:last-child {
-  border-bottom: 1px solid rgba(255, 99, 71, 0.7);
-  padding-bottom: 1rem;
-}
-.profile h3 {
-  text-align: left;
-}
-.social-icons {
-  margin: 1rem 0.5rem 0 0;
-}
-.social-icons a:hover {
-  color: rgb(0, 0, 189);
-  transform: translateY(-20px);
-}
-.social-text p {
-  line-height: unset;
-  margin-bottom: 1rem;
-}
-.social-icon {
-  margin-left: 0.5rem;
-  margin-bottom: 1rem;
-}
 
 /**DAILY QUOTE**/
 .daily-quote q {
@@ -253,7 +196,6 @@ li a:hover {
   }
   .side-content .profile {
     width: 100%;
-    margin-top: 5rem;
   }
   .essay p {
     margin-bottom: 1.5rem;
@@ -274,9 +216,9 @@ li a:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  main,
-  footer {
+  main {
     padding: 0 10%;
+    margin: 7% 0;
   }
   .wrapper {
     display: grid;
@@ -287,12 +229,7 @@ li a:hover {
     margin: 0;
     gap: 2rem;
   }
-  .blog-info {
-    flex-direction: column;
-  }
-  .blog-info > * {
-    margin-bottom: 0.5rem;
-  }
+
   #main-content {
     padding: 1rem 0;
     margin: 0;
@@ -313,10 +250,7 @@ li a:hover {
   .essay q {
     font-size: inherit;
   }
-  .side-content .profile {
-    width: 60%;
-    margin-top: 5rem;
-  }
+
   .footnote q {
     font-size: 4rem;
   }
