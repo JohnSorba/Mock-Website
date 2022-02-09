@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Open+Sans:wght@500&family=Roboto:ital,wght@0,900;1,500&display=swap");
+
 main {
   text-align: left;
   padding: 0 10%;
@@ -214,49 +216,18 @@ li a:hover {
 }
 
 /**********************************RESPONSIVE SECTION********************************/
-@media screen and (min-width: 1024px) {
-  .wrapper {
-    display: block;
-    grid-template-columns: 1fr;
-    margin: 2rem 2rem;
-    font-size: 1em;
-    padding: 0;
-    margin: 0;
-  }
-  .blog-info {
-    flex-direction: column;
-  }
-  .blog-info > * {
-    margin-bottom: 0.5rem;
-  }
-  #main-content {
-    padding: 1rem 0;
-    margin: 0;
-  }
-  #main-content h1 {
-    font-size: 4vw;
-  }
-  .essay p {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    font-size: 1em;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  .essay img {
-    width: 100%;
-  }
-  .essay q {
-    font-size: 1.2em;
-  }
-  .side-content .profile {
-    width: 60%;
-    margin-top: 5rem;
+
+@media screen and (min-width: 600) {
+  main {
+    margin: 0 0;
+    padding: 2% 10%;
   }
 }
+
 @media screen and (min-width: 360px) {
   main {
-    margin: 0 0%;
+    margin: 0 0;
+    padding: 2% 4%;
   }
   .wrapper {
     display: block;
@@ -267,6 +238,9 @@ li a:hover {
     padding: 1rem 0;
     max-width: 100%;
     margin: 0;
+  }
+  #main-content > * {
+    font-size: inherit;
   }
   #main-content h1 {
     font-size: 1.5em;
@@ -284,7 +258,7 @@ li a:hover {
   .essay p {
     margin-bottom: 1.5rem;
     font-size: 1em;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     text-align: justify;
   }
@@ -297,5 +271,56 @@ li a:hover {
   }
   .footnote p {
     font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main,
+  footer {
+    padding: 0 10%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem 2rem;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+  }
+  .blog-info {
+    flex-direction: column;
+  }
+  .blog-info > * {
+    margin-bottom: 0.5rem;
+  }
+  #main-content {
+    padding: 1rem 0;
+    margin: 0;
+  }
+  #main-content h1 {
+    font-size: 2.5em;
+  }
+  .essay p {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .essay img {
+    width: 100%;
+  }
+  .essay q {
+    font-size: inherit;
+  }
+  .side-content .profile {
+    width: 60%;
+    margin-top: 5rem;
+  }
+  .footnote q {
+    font-size: 4rem;
+  }
+  .footnote p {
+    font-size: 1.5em;
   }
 }
