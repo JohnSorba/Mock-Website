@@ -291,8 +291,11 @@ footer a {
   .navbar .logo {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
+    /* font-size: 1.5em; */
+    text-shadow: 1px 1px 0 0 black;
     letter-spacing: 0.2ch;
-    color: #ffffff;
+    color: #000000;
+    padding: 0.5em 0;
   }
 
   ul .nav-links {
@@ -334,6 +337,11 @@ footer a {
   }
   .footnote q {
     font-size: 3.5em;
+  }
+  footer {
+    flex-wrap: wrap;
+    padding: 1em 2%;
+    margin: 0;
   }
 }
 
