@@ -46,15 +46,7 @@ li a:hover {
   width: 80%;
   margin: 1rem auto;
 }
-.essay q {
-  display: block;
-  color: tomato;
-  border-left: 6px solid tomato;
-  border-top-left-radius: 10px;
-  margin: 2rem 2.5rem;
-  padding-left: 1.5rem;
-  font-size: 2rem;
-}
+
 .essay p {
   margin-bottom: 1.5rem;
   font-size: 1.1em;
@@ -160,14 +152,11 @@ li a:hover {
 
 /**********************************RESPONSIVE SECTION********************************/
 
-@media screen and (min-width: 600) {
-  main {
-    margin: 0 0;
-    padding: 2% 10%;
+@media screen and (min-width: 320px) {
+  .logo > a {
+    text-decoration: none;
+    color: white;
   }
-}
-
-@media screen and (min-width: 360px) {
   main {
     margin: 0 0;
     padding: 2% 4%;
@@ -194,9 +183,7 @@ li a:hover {
   .blog-info > * {
     margin-bottom: 0.5rem;
   }
-  .side-content .profile {
-    width: 100%;
-  }
+
   .essay p {
     margin-bottom: 1.5rem;
     font-size: 1em;
@@ -205,16 +192,43 @@ li a:hover {
     text-align: justify;
   }
 
+  .essay q {
+    display: block;
+    color: tomato;
+    border-left: 6px solid tomato;
+    border-top-left-radius: 10px;
+    margin: 2rem 2.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.1em;
+  }
+
   #cta p {
     font-size: 1rem;
   }
   .footnote q {
-    font-size: 1rem;
+    font-size: 1.1em;
   }
   .footnote p {
     font-size: 0.8rem;
   }
 }
+
+@media screen and (min-width: 600) {
+  main {
+    margin: 0 0;
+    padding: 2% 10%;
+  }
+  .essay q {
+    display: block;
+    color: tomato;
+    border-left: 6px solid tomato;
+    border-top-left-radius: 10px;
+    margin: 2rem 2.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.5em;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   main {
     padding: 0 10%;
@@ -244,11 +258,18 @@ li a:hover {
     line-height: 1.6;
     text-align: justify;
   }
+  .essay q {
+    display: block;
+    color: tomato;
+    border-left: 6px solid tomato;
+    border-top-left-radius: 10px;
+    margin: 2rem 2.5rem;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+  }
+
   .essay img {
     width: 100%;
-  }
-  .essay q {
-    font-size: inherit;
   }
 
   .footnote q {

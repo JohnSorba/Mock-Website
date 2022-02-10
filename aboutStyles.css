@@ -230,6 +230,9 @@ footer {
     text-align: center;
     padding-left: 0;
   }
+  .side-content .profile {
+    width: 100%;
+  }
 
   #cta h2 {
     font-size: 1.3rem;
