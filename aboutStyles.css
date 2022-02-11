@@ -4,11 +4,15 @@
   #container {
     display: block;
     grid-template-columns: 1fr;
-    grid-template-areas: "aside main";
+    grid-template-areas:
+      "aside"
+      "main";
     margin: 1rem 0%;
   }
   main {
     grid-area: main;
+    margin: 0 0;
+    padding: 2% 4%;
   }
   aside {
     grid-area: aside;
@@ -26,11 +30,6 @@
     line-height: 1.1;
     margin-bottom: 1em;
     text-align: center;
-  }
-  main {
-    margin: 5% 2%;
-    padding: 3% 0%;
-    outline: 1px solid;
   }
 
   .side-content .profile {
