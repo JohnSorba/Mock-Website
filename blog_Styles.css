@@ -2,6 +2,9 @@
 
 .wrapper {
   display: grid;
+  grid-template-columns: 3fr 1fr;
+  font-size: 1em;
+  gap: 2rem;
   text-align: left;
 }
 
@@ -84,8 +87,8 @@ li a:hover {
 /**************************EXTRA LINKS****************************/
 .other-resources {
   text-align: left;
-  /* outline: 1px solid black; */
-  margin: 0 0 5rem;
+  outline: 1px solid black;
+  padding: 7% 10%;
 }
 .other-resources .links {
   display: flex;
@@ -110,28 +113,14 @@ li a:hover {
 
 /**********************************RESPONSIVE SECTION********************************/
 
-@media screen and (min-width: 320px) {
-  .logo > a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-  main {
-    margin: 0;
-    padding: 2% 4%;
-  }
+@media screen and (min-width: 20em) {
   .wrapper {
-    display: block;
-    grid-template-columns: 1fr;
+    /* display: block; */
     margin: 1rem 2%;
   }
 }
 
-@media screen and (min-width: 600px) {
-  main {
-    margin: 0;
-    padding: 3% 10%;
-  }
-
+@media screen and (min-width: 37.5em) {
   .wrapper {
     grid-template-columns: 3fr 1fr;
     font-size: 1em;
@@ -140,14 +129,12 @@ li a:hover {
 }
 
 @media screen and (min-width: 60em) {
-  main {
-    margin: 0;
+  .other-resources {
     padding: 7% 10%;
   }
-
   .wrapper {
-    grid-template-columns: 3fr 1fr;
     font-size: 1em;
     gap: 2rem;
+    padding: 5% 10%;
   }
 }
