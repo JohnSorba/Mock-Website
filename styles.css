@@ -66,7 +66,7 @@ h1 {
   justify-content: space-between;
   flex-flow: wrap;
   align-items: center;
-  background-color: var(--colorBrown);
+  background-color: var(--colorFour);
   /* background-color: #caf0f8; */
   padding: 0.625rem 10%;
 }
@@ -95,7 +95,7 @@ h1 {
   width: 100%;
   height: auto;
   /* outline: 1px solid black; */
-  background-color: var(--colorFour);
+  background-color: var(--colorBrown);
   padding: 7% 10%;
   display: flex;
   justify-content: center;
@@ -113,10 +113,11 @@ h1 {
 
 /**MAIN Section**/
 .top-banner {
-  background-color: var(--colorSix);
-  box-shadow: 2px 2px 6px var(--backgroundColor),
-    -2px -2px 6px var(--backgroundColor), -2px 2px 6px var(--backgroundColor),
-    2px -2px 6px var(--backgroundColor);
+  background-color: var(--backgroundColor);
+  /* border: 1px solid var(--fontColor); */
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px var(--fontColor), -2px -2px 6px var(--fontColor),
+    -2px 2px 6px var(--fontColor), 2px -2px 6px var(--fontColor);
   max-width: 80%;
   margin: -10em auto 0;
   height: auto;
@@ -132,15 +133,12 @@ h1 {
 /**SECTION One**/
 #sectionOne {
   /* outline: 1px solid var(--colorFive); */
-  padding: 2% 0;
+  padding: 2% 10%;
   margin: 5% 0;
   text-align: left;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-    "article section"
-    "article section"
-    "article section";
+  grid-template-areas: "article section";
   grid-auto-rows: auto;
   gap: 1em;
 }
@@ -186,8 +184,7 @@ h1 {
   grid-area: section;
 }
 #sectionOne h2,
-#sectionTwo h2,
-#cta h2 {
+#sectionTwo h2 {
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 4.5rem;
@@ -195,63 +192,23 @@ h1 {
 
 /**GRID Section**/
 #sectionTwo {
-  height: auto;
+  background-color: var(--colorThree);
   outline: 1px solid rgb(12, 133, 66);
-  /* background-color: #0f0f0f; */
-  /* color: white; */
-  padding: 7% 0;
-}
-
-/**Call To Action**/
-#cta {
-  height: auto;
-  /* outline: 1px solid rgb(196, 63, 63); */
   padding: 7% 10%;
 }
-.call-to-action {
-  margin-bottom: 2.5rem;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
-#cta h2 {
-  margin: 0 0 2rem;
-}
-#cta p {
-  font-size: 1.8rem;
-  margin: 0 0 2.5rem;
-}
-
-#cta button {
-  padding: 0.5rem 1rem;
-  width: auto;
-  font-size: 1.2em;
+.flex > span {
+  font-size: 2em;
   font-weight: bold;
-  font-family: cursive;
-  color: white;
-  background-color: #0f0f0f;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 2px 1px 2px #0f0f0f;
-}
-/**FOOTNOTE QUOTE**/
-.footnote {
-  padding: 7% 10% 7%;
-}
-.footnote p {
-  color: tomato;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: right;
-}
-.footnote q {
-  display: inline-block;
-  font-size: 4rem;
-  font-weight: 900;
-  color: tomato;
-  text-align: left;
+  color: var(--colorSix);
 }
 
 /**FOOTER Section**/
 footer {
-  padding: 5% 10%;
+  padding: 7% 10%;
   text-align: right;
   display: flex;
   justify-content: space-between;
@@ -343,15 +300,6 @@ footer a {
   main {
     padding: 7% 0%;
   }
-  .footnote q {
-    font-size: 3.5em;
-  }
-  .footnote q {
-    font-size: 1.1em;
-  }
-  .footnote p {
-    font-size: 0.8rem;
-  }
 
   footer {
     flex-wrap: wrap;
@@ -408,12 +356,6 @@ footer a {
     border-bottom-right-radius: 0.5em;
     margin: 0.5em;
   }
-  .item {
-    flex: 1 0 auto;
-  }
-  .footnote q {
-    font-size: 3.5em;
-  }
   footer {
     flex-direction: row;
     align-items: center;
@@ -469,9 +411,6 @@ footer a {
     padding: 0.3em 0.5em;
     margin: 0.5em;
   }
-  main {
-    padding: 7% 10%;
-  }
   .hero h1 {
     margin-bottom: 2rem;
   }
@@ -479,19 +418,6 @@ footer a {
     font-size: 3.5em;
     text-align: center;
     padding-left: 0;
-  }
-
-  #cta h2 {
-    font-size: 1.3rem;
-  }
-  #cta p {
-    font-size: 1rem;
-  }
-  .footnote q {
-    font-size: 3.5em;
-  }
-  .footnote p {
-    font-size: 0.8em;
   }
 
   footer {
