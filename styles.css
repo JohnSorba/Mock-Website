@@ -68,7 +68,7 @@ h1 {
   align-items: center;
   background-color: var(--colorFour);
   /* background-color: #caf0f8; */
-  padding: 0.625rem 10%;
+  padding: 0.625em 10%;
 }
 
 .nav-links {
