@@ -15,18 +15,24 @@
   }
   aside {
     grid-area: aside;
+    border-bottom: 3px solid var(--colorBrown);
+    padding-bottom: 2em;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
   }
 
   .profile img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
+    margin: 0 auto;
   }
   .profile-text p {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 0.5em;
+    text-align: justify;
   }
   .profile-text p:last-child {
     border-top: 1px solid rgba(255, 99, 71, 0.7);
@@ -35,7 +41,9 @@
   }
   .profile-text h2 {
     text-align: left;
-    font-size: 1.3em;
+    font-size: 2.5em;
+    padding: 0;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -45,13 +53,27 @@
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
     grid-template-areas: "aside main";
-    margin: 4em 7%;
+    padding: 7% 0;
   }
   main {
     grid-area: main;
+    border-left: 3px solid var(--colorBrown);
+    border-bottom: none;
+    padding-left: 1em;
   }
   aside {
     grid-area: aside;
+    border: unset;
+  }
+
+  .profile img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin: 0 auto;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
   }
 }
 
@@ -77,19 +99,14 @@
   }
 
   /**PROFILE**/
-  .side-content .profile {
-    width: 100%;
-    padding: 0.5rem 0.625rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-top-right-radius: 5px;
-    background-color: var(--colorBrown);
-  }
   .profile img {
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 50%;
     margin: 0 auto;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
   }
   .profile-text p a {
     color: var(--colorBrown);
