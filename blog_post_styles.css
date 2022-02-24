@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Open+Sans:wght@500&family=Roboto:ital,wght@0,900;1,500&display=swap");
 
 /**********************************RESPONSIVE SECTION********************************/
-.navbar {
-  background-color: #e4e8f3;
-}
+
 main {
   margin: 0 auto;
   padding: 5% 0 0;
@@ -21,7 +19,7 @@ main {
 #blog-heading {
   margin-bottom: 0.25em;
   font-size: 4em;
-  color: #404040;
+  color: var(--blog-heading);
 }
 .blog-info {
   display: flex;
@@ -51,6 +49,7 @@ main {
 .essay p {
   font-family: "Montserrat", sans-serif;
   color: #404040;
+  /* color: var(--fontColor); */
   margin-bottom: 1.3em;
   font-size: 1.1em;
   line-height: 1.6;
@@ -77,9 +76,9 @@ main {
 }
 
 .card {
-  /* outline: 1px solid; */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -98,10 +97,10 @@ main {
 }
 .article-card h3 a {
   font-size: 1em;
-  color: var(--Complementary-color);
+  color: var(--blog-heading);
   margin-bottom: 0.625em;
 }
 .article-card p {
   text-align: justify;
-  color: rgb(151, 151, 151);
+  color: var(--fontColor);
 }

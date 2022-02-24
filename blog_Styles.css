@@ -4,7 +4,7 @@
   background: none;
 }
 #main-header .hero {
-  padding: 0 15%;
+  padding: 3% 15% 0;
   text-align: left;
 }
 
@@ -15,7 +15,6 @@
   gap: 2rem;
   text-align: left;
   padding: 7% 15%;
-  /* background: linear-gradient(0deg, #f4fdff, #ffffff); */
 }
 .topic-section {
   padding: 2% 15% 0;
@@ -25,9 +24,12 @@
   justify-content: space-evenly;
   align-items: center;
   font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.2ch;
+  color: var(--Complementary-color);
   padding: 1% 0;
-  border-top: 1px solid var(--Maroon);
-  border-bottom: 1px solid var(--Maroon);
+  border-top: 1px solid var(--Dominant-color);
+  border-bottom: 1px solid var(--Dominant-color);
 }
 
 /**************************ASIDE Section**************************/
@@ -37,34 +39,32 @@
   flex-direction: row;
   gap: 2em;
   text-align: left;
-  border-bottom: 1px solid var(--Maroon);
-  padding-bottom: 1em;
+  border-bottom: 1px solid var(--Dominant-color);
+  padding-bottom: 1.5em;
   margin-bottom: 1em;
 }
 .essay-card .content {
   text-align: justify;
   margin-bottom: 1em;
-  border-bottom: 1px solid var(--colorGray);
 }
 .essay-card h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.3em;
   line-height: 1.3;
   letter-spacing: 0.015em;
-  font-weight: bold;
-  margin-bottom: 0.25em;
+  font-weight: 600;
+  margin-bottom: 0.75em;
 }
 .essay-card h3 a {
-  color: var(--Maroon);
+  color: var(--Complementary-color);
 }
 .essay-card h3 a:hover {
-  color: var(--Maroon);
-  border-bottom: 1px solid var(--Maroon);
+  border-bottom: 1px solid var(--Dominant-color);
 }
 .essay-card time {
   display: inline-block;
   font-style: italic;
-  color: var(--Maroon);
+  color: var(--Complementary-color);
 }
 .essay-card p {
   margin-bottom: 1em;
@@ -73,10 +73,11 @@
   margin-left: auto;
   font-size: 80%;
   font-weight: bold;
+  margin-top: auto;
 }
 .info .author {
   font-style: italic;
-  color: var(--Maroon);
+  color: var(--Complementary-color);
 }
 .essay-card img {
   display: block;
@@ -86,51 +87,52 @@
 
 /**SIDE CONTENT**/
 .side-content {
-  /* border-left: 1px solid var(--Maroon); */
   padding-left: 1em;
 }
 .side-content h2,
 .side-content h3 {
   text-align: center;
   margin: 2em 0 1em;
-  color: #ffffff;
-  background-color: var(--Maroon);
+  color: var(--backgroundColor);
+  background-color: var(--Dominant-color);
 }
 .side-content li {
   list-style-type: none;
   margin-bottom: 0.75rem;
-  border-bottom: 1px solid var(--Maroon);
+  border-bottom: 1px solid var(--Complementary-color);
   padding: 0.25em 0;
 }
 .side-content a {
-  color: #0f0f0f;
+  color: var(--fontColor);
   text-decoration: none;
   font-size: 0.9em;
 }
 .side-content a:hover {
-  color: var(--Maroon);
+  color: var(--Dominant-color);
+  border-left: 2px solid var(--Dominant-color);
+  padding-left: 0.5em;
+  transition: 0.1s ease;
 }
 /**DAILY QUOTE**/
-.daily-quote q {
+.daily-quote p {
+  color: var(--Complementary-color);
   font-weight: bold;
+  letter-spacing: 0.1ch;
+  padding-bottom: 0.5em;
+}
+
+.daily-quote q {
   font-style: italic;
-  padding-left: 1rem;
-  border-left: 6px solid tomato;
+  padding-left: 1em;
+  border-left: 6px solid var(--Dominant-color);
   border-top-left-radius: 10px;
   display: block;
-}
-.daily-quote p {
-  color: tomato;
-  text-decoration: underline;
-  font-weight: bold;
-  font-style: italic;
 }
 
 /**************************EXTRA LINKS****************************/
 .other-resources {
   text-align: left;
-  padding: 7% 10%;
-  /* background: linear-gradient(45deg, #2672a5, #bae0fa); */
+  padding: 7% 15%;
 }
 .other-resources .links {
   display: flex;
@@ -138,14 +140,14 @@
   justify-content: space-between;
 }
 .other-resources h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .other-resources li {
   list-style-type: none;
-  border-left: 5px solid var(--colorBrown);
+  border-left: 5px solid var(--Dominant-color);
   margin-bottom: 0.625rem;
-  padding-left: 1rem;
+  padding-left: 1em;
   border-top-left-radius: 5px;
 }
 .other-resources a {
@@ -153,5 +155,5 @@
   color: #0f0f0f;
 }
 .other-resources a:hover {
-  color: var(--Maroon);
+  color: var(--Dominant-color);
 }
