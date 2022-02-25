@@ -282,15 +282,15 @@ footer {
 footer .icons a {
   margin-right: 1.3em;
   color: var(--Complementary-color);
+  transition: transform 0.4s ease-in-ou;
 }
 footer .icons a:hover {
   color: var(--backgroundColor);
-  transition: 0.4s ease;
+  transition: color 0.4s ease;
+  transform: translateY(-10px);
+}
+footer .icons i:hover {
   transform: translateY(-2px);
 }
-/* footer .icons i:hover {
-  color: rgb(0, 0, 189);
-  transform: translateY(-2px);
-} */
 /**SOCIALHANDLES**/
 /**COPYRIGHT**/

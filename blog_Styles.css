@@ -105,7 +105,7 @@
 .side-content a {
   color: var(--fontColor);
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 .side-content a:hover {
   color: var(--Dominant-color);
@@ -123,6 +123,7 @@
 
 .daily-quote q {
   font-style: italic;
+  font-size: 90%;
   padding-left: 1em;
   border-left: 6px solid var(--Dominant-color);
   border-top-left-radius: 10px;
