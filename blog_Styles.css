@@ -31,6 +31,12 @@
   border-top: 1px solid var(--Dominant-color);
   border-bottom: 1px solid var(--Dominant-color);
 }
+.topics a {
+  color: var(--Complementary-color);
+}
+.topics a:hover {
+  color: var(--Dominant-color);
+}
 
 /**************************ASIDE Section**************************/
 
@@ -128,33 +134,4 @@
   border-left: 6px solid var(--Dominant-color);
   border-top-left-radius: 10px;
   display: block;
-}
-
-/**************************EXTRA LINKS****************************/
-.other-resources {
-  text-align: left;
-  padding: 7% 15%;
-}
-.other-resources .links {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-}
-.other-resources h3 {
-  margin-bottom: 1em;
-}
-
-.other-resources li {
-  list-style-type: none;
-  border-left: 5px solid var(--Dominant-color);
-  margin-bottom: 0.625rem;
-  padding-left: 1em;
-  border-top-left-radius: 5px;
-}
-.other-resources a {
-  text-decoration: none;
-  color: #0f0f0f;
-}
-.other-resources a:hover {
-  color: var(--Dominant-color);
 }

@@ -18,12 +18,14 @@
   /* *********Brown Shades********** */
   --colorChocolate: #c65501;
   --colorDarkGoldenRod: #ab6801;
+  --colorDarkGoldenRod: #ab6801;
   --colorSaddleBrown: #895100;
   --colorPeachPuff: #ffdcb8;
   --colorBlackOff: #2c1700;
 }
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 /*
