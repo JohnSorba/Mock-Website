@@ -1,39 +1,68 @@
-#main-header .hero {
-  padding: 3% 15% 0;
-  text-align: left;
-  font-size: 0.5em;
+.wrapper {
+  display: grid;
+  grid-template-columns: 20em auto;
 }
 
-.topic-section {
-  padding: 2% 15% 0;
+.sidebar {
+  background: var(--colorLavender);
+  box-shadow: 0.3px 0.001px 6px 0.1px var(--Complementary-color);
+}
+.sidebar > * {
+  /* background: var(--Dominant-color); */
+  text-align: left;
+}
+.sidebar h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1em 0;
+  text-align: center;
 }
 .topics {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.2ch;
   color: var(--Complementary-color);
-  padding: 1% 0;
-  border-top: 1px solid var(--Dominant-color);
-  border-bottom: 1px solid var(--Dominant-color);
+  position: sticky;
+  top: -1px;
+}
+.topics li {
+  border-bottom: 1px solid var(--Complementary-color);
+  padding: 3% 5%;
+}
+.topics .writing {
+  border-top: 1px solid var(--Complementary-color);
 }
 .topics a {
   color: var(--Complementary-color);
 }
 .topics a:hover {
   color: var(--Dominant-color);
+  background-color: var(--backgroundColor);
+}
+.topics a:focus-visible {
+  color: var(--Dominant-color);
+  background-color: var(--backgroundColor);
 }
 
 /**************************EXTRA LINKS****************************/
 .other-resources {
   text-align: left;
-  padding: 3% 15%;
+}
+.other-resources h1 {
+  font-family: var(--font-Inter);
+  font-size: 3.5em;
+  font-weight: 900;
+  padding: 1em 10%;
+  color: var(--Complementary-color);
 }
 .other-resources article {
   margin-bottom: 3em;
   padding-bottom: 1.5em;
+  padding: 0 10% 1.5em;
 }
 .border-header {
   display: flex;
@@ -45,7 +74,7 @@
   color: var(--Complementary-color);
 }
 .back {
-  border: 1px solid;
+  border-bottom: 2px solid;
 }
 .other-resources h3 {
   text-align: left;
@@ -54,6 +83,8 @@
 }
 .other-resources .links {
   display: flex;
+
+  gap: 0.5em;
   flex-flow: wrap;
   justify-content: space-between;
 }
