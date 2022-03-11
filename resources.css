@@ -1,22 +1,17 @@
 .navbar {
-  padding: 0.5em 5%;
-}
-footer {
-  padding: 3% 5%;
+  padding: 0.5em 15%;
 }
 main {
   padding: 2% 5% 0;
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 15em auto;
+  grid-template-columns: 12.5em auto;
   /* outline: 1px solid; */
 }
 
 .sidebar {
   background: var(--backgroundColor);
-  /* box-shadow: 0.3px 0.001px 6px 0.1px var(--Complementary-color); */
-  /* border-right: 1px solid var(--Complementary-color); */
 }
 .sidebar * {
   text-align: left;
@@ -24,6 +19,7 @@ main {
 .topics {
   position: sticky;
   top: 0px;
+  border-right: 1px solid var(--Complementary-color);
 }
 
 .topics h1 {
@@ -40,23 +36,17 @@ main {
   letter-spacing: 0.2ch;
   color: var(--Complementary-color);
 }
-.topics li {
+.topics ul > a {
+  color: var(--Complementary-color);
   padding: 3% 0;
 }
-.topics ul a {
-  color: var(--Complementary-color);
-}
-.topics ul a:hover {
-  /* color: var(--backgroundColor); */
-  /* background-color: var(--Dominant-color); */
+.topics ul > a:hover {
+  color: var(--backgroundColor);
+  background-color: var(--Dominant-color);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding-left: 1em;
   transition: 0.2s ease;
-}
-.topics ul a:focus-visible {
-  color: var(--Dominant-color);
-  background-color: var(--backgroundColor);
 }
 
 /**************************EXTRA LINKS****************************/
