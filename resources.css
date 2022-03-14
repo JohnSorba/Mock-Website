@@ -2,7 +2,7 @@
   padding: 0.5em 15%;
 }
 main {
-  padding: 2% 5% 0;
+  padding: 2% 5% 0 0;
 }
 .wrapper {
   display: grid;
@@ -19,13 +19,13 @@ main {
 .topics {
   position: sticky;
   top: 0px;
-  border-right: 1px solid var(--Complementary-color);
+  padding: 1em 0 0;
 }
 
 .topics h1 {
   font-size: 1.1em;
   font-weight: 700;
-  padding: 1em 0;
+  padding: 0 0 1em 1em;
 }
 .topics ul {
   display: flex;
@@ -38,14 +38,14 @@ main {
 }
 .topics ul > a {
   color: var(--Complementary-color);
-  padding: 3% 0;
+  padding: 3% 1em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .topics ul > a:hover {
   color: var(--backgroundColor);
   background-color: var(--Dominant-color);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding-left: 1em;
+  padding-left: 2em;
   transition: 0.2s ease;
 }
 
