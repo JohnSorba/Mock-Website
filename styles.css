@@ -130,6 +130,9 @@ body {
   width: 100%;
   height: auto;
   /* outline: 1px solid black; */
+  background: url(./images/cool-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   /* background-color: var(--colorBrown); */
   padding: 5% 15% 10%;
   /* display: grid; */
@@ -138,7 +141,7 @@ body {
 }
 .hero > h1 {
   font-family: var(--font-Inter);
-  color: var(--Complementary-color);
+  color: var(--backgroundColor);
   font-size: 4.5em;
 }
 /********************MAIN - **********************/

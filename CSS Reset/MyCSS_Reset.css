@@ -48,7 +48,7 @@ body {
 }
 
 img {
-  display: block; /*so it behave like a block-level element and can adjust height and width*/
+  display: block; /*so it behave like a block-level element and can its adjust height and width*/
   max-width: 100%; /*ensures an image does not scale beyond its original width*/
   /* It is less common to specify the height of elements */
 }
