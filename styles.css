@@ -130,7 +130,7 @@ body {
   width: 100%;
   height: auto;
   /* outline: 1px solid black; */
-  background: url(./images/cool-background.png);
+  background: url(cool-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: var(--colorBrown); */
